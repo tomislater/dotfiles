@@ -1,0 +1,5 @@
+*.pydevproject
+.project
+.metadata
+*.py[cod]
+.ropeproject/
