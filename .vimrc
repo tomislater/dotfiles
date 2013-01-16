@@ -16,7 +16,7 @@ set clipboard=unnamed
 
 " Mouse and backspace
 set bs=2     " make backspace behave like normal again
-set mouse=a
+set mouse=a " enable mouse
 
 
 " Rebind <Leader> key
@@ -79,19 +79,6 @@ filetype plugin indent on
 syntax on
 
 
-" Color scheme
-" cd ~./vim/bundle/
-" git clone https://github.com/altercation/vim-colors-solarized
-set t_Co=16
-set background=dark
-let g:solarized_termcolors=16
-colorscheme solarized
-
-
-" Powerline fancy
-let g:Powerline_symbols='fancy'
-
-
 " Showing line numbers and length
 set number  " show line numbers
 set tw=79   " width of document (used by gd)
@@ -131,12 +118,21 @@ set noswapfile
 " ============================================================================
 " Python IDE Setup
 " ============================================================================
-
-
 " Settings for vim-powerline
 " cd ~/.vim/bundle
-" git clone git://github.com/Lokaltog/vim-powerline.git
+" git clone git://github.com/Lokaltog/powerline.git
+set guifont=Source\ Code\ Pro\ for\ Powerline\ for\ Powerline
 set laststatus=2
+source ~/.vim/bundle/powerline/powerline/ext/vim/source_plugin.vim
+
+
+" Color scheme
+" cd ~./vim/bundle/
+" git clone https://github.com/altercation/vim-colors-solarized
+set t_Co=16
+set background=dark
+let g:solarized_termcolors=16
+colorscheme solarized
 
 
 " Settings for ctrlp

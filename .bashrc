@@ -114,6 +114,8 @@ alias mem='cat /proc/meminfo'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias gpo='git push origin HEAD:refs/for/master'
 
 function _update_ps1()
 {
