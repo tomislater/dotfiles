@@ -109,6 +109,7 @@ fi
 # User specific aliases and functions
 source ~/.git-completion.bash
 
+# aliases
 alias cpu='cat /proc/cpuinfo'
 alias mem='cat /proc/meminfo'
 alias ..='cd ..'
@@ -117,12 +118,16 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias gpo='git push origin HEAD:refs/for/master'
 
+
+# Prompt for powerline-bash or powerline
 function _update_ps1()
 {
     export PS1="$(~/powerline-bash/powerline-bash.py $?)\n>> "
+    #export PS1="$(~/.vim/bundle/powerline/powerline/ext/terminal/powerline_prompt.py $?)\n>> "
 }
 
 export PROMPT_COMMAND="_update_ps1"
 
+# virtualenv
 export WORKON_HOME=~/.virtualenv
 source /usr/local/bin/virtualenvwrapper.sh

@@ -23,5 +23,8 @@ Useful things
     https://github.com/altercation/vim-colors-solarized.git
     https://github.com/Lokaltog/powerline.git
 
-###### Powerline for bash 
+###### Powerline-bash
     https://github.com/milkbikis/powerline-bash.git
+
+###### Powerline
+    https://github.com/Lokaltog/powerline.git

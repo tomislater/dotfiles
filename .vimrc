@@ -140,7 +140,9 @@ colorscheme solarized
 " git clone https://github.com/kien/ctrlp.vim.git
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
-set wildignore+=*_build/*
+set wildignore+=*build/*
+set wildignore+=*dist/*
+set wildignore+=*.egg-info/*
 set wildignore+=*/coverage/*
 
 
@@ -153,8 +155,7 @@ let g:pymode_rope_goto_def_newwin = "vnew"
 let g:pymode_rope_extended_complete = 1
 let g:pymode_breakpoint = 0
 let g:pymode_syntax = 1
-let g:pymode_syntax_builtin_objs = 0
-let g:pymode_syntax_builtin_funcs = 0
+let g:pymode_virtualenv = 1
 
 
 " Better navigating through omnicomplete option list
@@ -182,10 +183,21 @@ set nofoldenable
 
 
 " NERDTree
+" cd ~/.vim/bundle
+" git clone https://github.com/scrooloose/nerdtree.git
+nmap <leader>t :NERDTree<CR>
+
 " Close vim if the only window left open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 
+" NERDCommenter
+" cd ~/.vim/bundle
+" git clone https://github.com/scrooloose/nerdcommenter.git
+
+
 " Ack for vim
+" sudo apt-get install ack-grep
+" cd ~/.vim/bundle
 " git clone https://github.com/mileszs/ack.vim.git
 nmap <leader>a <Esc>:Ack!
