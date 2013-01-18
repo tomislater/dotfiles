@@ -123,7 +123,7 @@ alias gpo='git push origin HEAD:refs/for/master'
 function _update_ps1()
 {
     export PS1="$(~/powerline-bash/powerline-bash.py $?)\n>> "
-    #export PS1="$(~/.vim/bundle/powerline/powerline/ext/terminal/powerline_prompt.py $?)\n>> "
+    #export PS1="$(~/.vim/bundle/powerline/scripts/powerline-prompt $?)\n>> "
 }
 
 export PROMPT_COMMAND="_update_ps1"
