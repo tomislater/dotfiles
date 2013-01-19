@@ -1,6 +1,20 @@
 dotfiles
 ========
 
+Install
+-------
+###### Fonts + Vim + Bash
+    ./install.sh # (-f, --force)
+
+###### Only Vim
+    ./install.sh vim
+
+###### Only Bash
+    ./install.sh bash
+
+###### Only Fonts
+    ./install.sh fonts
+
 Useful things
 -------------
 
