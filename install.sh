@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 git pull
-git submodule init --update --recursive
+git submodule init
+git submodule update --recursive
 
 function vimOnly() {
 	rsync --exclude ".gitmodules" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude "powerline-bash/" --exclude ".fonts/" -av . ~
