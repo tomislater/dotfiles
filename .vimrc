@@ -201,3 +201,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " cd ~/.vim/bundle
 " git clone https://github.com/mileszs/ack.vim.git
 nmap <leader>a <Esc>:Ack!
+
+
+" zencoding-vim
+" cd ~/.vim/bundle
+" git clone https://github.com/mattn/zencoding-vim.git
+
+

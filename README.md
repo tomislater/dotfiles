@@ -36,6 +36,7 @@ Useful things
     https://github.com/klen/python-mode.git
     https://github.com/altercation/vim-colors-solarized.git
     https://github.com/Lokaltog/powerline.git
+    https://github.com/mattn/zencoding-vim
 
 ###### Powerline-bash
     https://github.com/milkbikis/powerline-bash.git
