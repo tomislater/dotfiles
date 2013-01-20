@@ -207,4 +207,8 @@ nmap <leader>a <Esc>:Ack!
 " cd ~/.vim/bundle
 " git clone https://github.com/mattn/zencoding-vim.git
 
+" vim-markdown
+" cd ~/.vim/bundle
+" git clone https://github.com/plasticboy/vim-markdown.git
+
 
