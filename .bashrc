@@ -112,7 +112,7 @@ source ~/.git-completion.bash
 # Prompt for powerline-bash or powerline
 function _update_ps1()
 {
-    export PS1="$(~/powerline-bash/powerline-bash.py $?)\n>> "
+    export PS1="$(~/powerline-shell/powerline-bash.py $?)\n>> " # or this one vv
     #export PS1="$(~/.vim/bundle/powerline/scripts/powerline-prompt $?)\n>> "
 }
 

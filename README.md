@@ -38,8 +38,8 @@ Useful things
     https://github.com/Lokaltog/powerline.git
     https://github.com/mattn/zencoding-vim
 
-###### Powerline-bash
-    https://github.com/milkbikis/powerline-bash.git
+###### Powerline-shell
+    https://github.com/milkbikis/powerline-shell.git
 
 ###### Powerline
     https://github.com/Lokaltog/powerline.git

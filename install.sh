@@ -5,19 +5,19 @@ git submodule init
 git submodule update --recursive
 
 function vimOnly() {
-	rsync --exclude ".gitmodules" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude "powerline-bash/" --exclude ".fonts/" -av . ~
+	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude "powerline-shell/" --exclude ".fonts/" -av . ~
 }
 
 function fontsOnly() {
-	rsync --exclude ".gitmodules" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude ".vimrc" --exclude ".vim/" --exclude "powerline-bash/" -av . ~
+	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude ".vimrc" --exclude ".vim/" --exclude "powerline-shell/" -av . ~
 }
 
 function bashOnly() {
-	rsync --exclude ".gitmodules" --exclude ".git/" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude ".vimrc" --exclude ".vim/" --exclude ".fonts/" -av . ~
+	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git/" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude ".vimrc" --exclude ".vim/" --exclude ".fonts/" -av . ~
 }
 
 function doIt() {
-	rsync --exclude ".gitmodules" --exclude ".git/" --exclude "install.sh" --exclude "README.md" -av . ~
+	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git/" --exclude "install.sh" --exclude "README.md" -av . ~
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

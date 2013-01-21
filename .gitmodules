@@ -1,6 +1,3 @@
-[submodule "powerline-bash"]
-	path = powerline-bash
-	url = https://github.com/milkbikis/powerline-bash.git
 [submodule ".vim/bundle/ack.vim"]
 	path = .vim/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
@@ -25,3 +22,6 @@
 [submodule ".vim/bundle/zencoding-vim"]
 	path = .vim/bundle/zencoding-vim
 	url = http://github.com/mattn/zencoding-vim.git
+[submodule "powerline-shell"]
+	path = powerline-shell
+	url = https://github.com/milkbikis/powerline-shell.git
