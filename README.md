@@ -33,14 +33,14 @@ Useful things
     https://github.com/kien/ctrlp.vim.git
     https://github.com/scrooloose/nerdcommenter.git
     https://github.com/scrooloose/nerdtree.git
-    https://github.com/klen/python-mode.git
-    https://github.com/altercation/vim-colors-solarized.git
     https://github.com/Lokaltog/powerline.git
-    https://github.com/mattn/zencoding-vim
-    https://github.com/garbas/vim-snipmate.git
+    https://github.com/klen/python-mode.git
+    https://github.com/honza/snipmate-snippets.git
     https://github.com/tomtom/tlib_vim.git
     https://github.com/MarcWeber/vim-addon-mw-utils.git
-    https://github.com/honza/snipmate-snippets.git
+    https://github.com/altercation/vim-colors-solarized.git
+    https://github.com/garbas/vim-snipmate.git
+    https://github.com/mattn/zencoding-vim
 
 ###### Powerline-shell
     https://github.com/milkbikis/powerline-shell.git
