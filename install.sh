@@ -9,7 +9,7 @@ function vimOnly() {
 }
 
 function fontsOnly() {
-	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude ".vimrc" --exclude ".vim/" --exclude "powerline-shell/" -av . ~
+	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude ".vimrc" --exclude ".vim/" --exclude "powerline-shell/" --exclude "powerline/" -av . ~
 }
 
 function bashOnly() {
