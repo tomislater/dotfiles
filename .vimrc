@@ -69,10 +69,6 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
 
-" mako templates as html
-au BufReadPost *.mako set syntax=html
-
-
 " Enable syntax highlighting
 filetype off
 filetype plugin indent on
@@ -118,14 +114,6 @@ set noswapfile
 " ============================================================================
 " Python IDE Setup
 " ============================================================================
-" Settings for vim-powerline
-" cd ~/.vim/bundle
-" git clone git://github.com/Lokaltog/powerline.git
-set guifont=Source\ Code\ Pro\ for\ Powerline\ for\ Powerline
-set laststatus=2
-source ~/.vim/bundle/powerline/powerline/ext/vim/source_plugin.vim
-
-
 " Color scheme
 " cd ~./vim/bundle/
 " git clone https://github.com/altercation/vim-colors-solarized
@@ -190,21 +178,8 @@ nmap <leader>t :NERDTree<CR>
 " Close vim if the only window left open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-
-" NERDCommenter
-" cd ~/.vim/bundle
-" git clone https://github.com/scrooloose/nerdcommenter.git
-
-
 " Ack for vim
 " sudo apt-get install ack-grep
 " cd ~/.vim/bundle
 " git clone https://github.com/mileszs/ack.vim.git
 nmap <leader>a <Esc>:Ack!
-
-
-" zencoding-vim
-" cd ~/.vim/bundle
-" git clone https://github.com/mattn/zencoding-vim.git
-
-
