@@ -114,6 +114,11 @@ set noswapfile
 " ============================================================================
 " Python IDE Setup
 " ============================================================================
+" Powerline
+" pip install --user git+git://github.com/Lokaltog/powerline
+set laststatus=2
+
+
 " Color scheme
 " cd ~./vim/bundle/
 " git clone https://github.com/altercation/vim-colors-solarized
