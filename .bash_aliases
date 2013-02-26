@@ -3,6 +3,7 @@
 # INFO ======================
 alias cpu='cat /proc/cpuinfo'
 alias mem='cat /proc/meminfo'
+alias wotgobblemem='ps -o time,ppid,pid,nice,pcpu,pmem,user,comm -A | sort -n -k 6 | tail -15'
 # ==========================
 
 
