@@ -10,6 +10,9 @@ alias wotgobblemem='ps -o time,ppid,pid,nice,pcpu,pmem,user,comm -A | sort -n -k
 # DIRECTORIES ===============
 # recursive directory listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
+lt() {
+    ls -ltrsa "$@" | tail;
+}
 
 # jump back n directories at a time
 alias ..='cd ..'
@@ -46,6 +49,14 @@ function mcd() {
 
 # TERMINAL =================
 alias c='clear'
+
+psgrep() {
+    ps axuf | grep -v grep | grep "$@" -i --color=auto;
+}
+
+fname() {
+    find . -iname "*$@*";
+}
 
 # show which commands you use the most
 alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30'

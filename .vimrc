@@ -68,6 +68,8 @@ vnoremap > >gv  " better indentation
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
+" Disable syntax highlight for files larger than 50 MB
+autocmd BufWinEnter * if line2byte(line("$") + 1) > 50000000 | syntax clear | endif
 
 " Enable syntax highlighting
 filetype off
