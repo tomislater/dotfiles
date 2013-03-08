@@ -194,3 +194,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " cd ~/.vim/bundle
 " git clone https://github.com/mileszs/ack.vim.git
 nmap <leader>a <Esc>:Ack!
+
+" Vim Git Gutter
+" cd ~/.vim/bundle
+" git clone https://github.com/airblade/vim-gitgutter.git
+let g:gitgutter_enabled = 0
+nmap <leader>gr :GitGutterToggle<CR>
+nmap <leader>s :GitGutterPrevHunk<CR>
+nmap <leader>d :GitGutterNextHunk<CR>

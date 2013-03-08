@@ -44,6 +44,7 @@ Useful things
     https://github.com/tomtom/tlib_vim.git
     https://github.com/MarcWeber/vim-addon-mw-utils.git
     https://github.com/altercation/vim-colors-solarized.git
+    https://github.com/airblade/vim-gitgutter.git
     https://github.com/garbas/vim-snipmate.git
     https://github.com/mattn/zencoding-vim
 
