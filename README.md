@@ -21,6 +21,9 @@ Install
     cd powerline
     sudo python setup.py install
 
+###### If you want use tagbar plugin
+    sudo apt-get install ctags
+
 Useful things
 -------------
 
@@ -47,6 +50,7 @@ Useful things
     https://github.com/airblade/vim-gitgutter.git
     https://github.com/garbas/vim-snipmate.git
     https://github.com/mattn/zencoding-vim
+    https://github.com/majutsushi/tagbar
 
 ###### Powerline-shell
     https://github.com/milkbikis/powerline-shell.git

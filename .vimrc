@@ -202,3 +202,8 @@ let g:gitgutter_enabled = 0
 nmap <leader>gr :GitGutterToggle<CR>
 nmap <leader>s :GitGutterPrevHunk<CR>
 nmap <leader>d :GitGutterNextHunk<CR>
+
+" Tagbar
+" cd ~/.vim/bundle
+" git clone git://github.com/majutsushi/tagbar
+nmap <F8> :TagbarToggle<CR>
