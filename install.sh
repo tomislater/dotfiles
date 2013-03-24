@@ -5,11 +5,11 @@ git submodule init
 git submodule update --recursive
 
 function vimOnly() {
-	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude "powerline-shell/" --exclude ".fonts/" -av . ~
+	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude "powerline-shell/" --exclude ".fonts/" --exclude ".config/" -av . ~
 }
 
 function fontsOnly() {
-	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude ".vimrc" --exclude ".vim/" --exclude "powerline-shell/" --exclude "powerline/" -av . ~
+	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude ".vimrc" --exclude ".vim/" --exclude "powerline-shell/" --exclude "powerline/" --exclude ".config/" -av . ~
 }
 
 function bashOnly() {
