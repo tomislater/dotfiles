@@ -1,18 +1,21 @@
 # MY ALIASES
 
-# INFO ======================
+# INFO =====================
 alias cpu='cat /proc/cpuinfo'
 alias mem='cat /proc/meminfo'
 alias wotgobblemem='ps -o time,ppid,pid,nice,pcpu,pmem,user,comm -A | sort -n -k 6 | tail -15'
 # ==========================
 
 
-# DIRECTORIES ===============
+# DIRECTORIES AND FILES ====
 # recursive directory listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
 lt() {
     ls -ltrsa "$@" | tail;
 }
+
+# delete all "*.pyc" files ;)
+alias delpyc='find . -name "*.pyc" -delete'
 
 # jump back n directories at a time
 alias ..='cd ..'
