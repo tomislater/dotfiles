@@ -43,7 +43,6 @@ Useful things
     https://github.com/scrooloose/nerdcommenter.git
     https://github.com/scrooloose/nerdtree.git
     https://github.com/klen/python-mode.git
-    https://github.com/honza/snipmate-snippets.git
     https://github.com/tomtom/tlib_vim.git
     https://github.com/MarcWeber/vim-addon-mw-utils.git
     https://github.com/altercation/vim-colors-solarized.git
