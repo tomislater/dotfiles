@@ -121,7 +121,7 @@ set noswapfile
 " git clone https://github.com/Lokaltog/powerline.git
 " cd powerline
 " sudo python setup.py install
-set rtp+=~/powerline/powerline/bindings/vim
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2
 
 
