@@ -3,4 +3,5 @@
 .metadata
 *.py[cod]
 .ropeproject/
+.codeintel/
 *.log
