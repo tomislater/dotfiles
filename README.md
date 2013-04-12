@@ -15,6 +15,9 @@ Install
 ###### Only Fonts
     ./install.sh fonts
 
+###### Only sublime
+    ./install.sh sublime
+
 ###### Install powerline for vim
     cd ~
     git clone https://github.com/Lokaltog/powerline.git
