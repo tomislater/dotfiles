@@ -98,3 +98,9 @@ extract () {
      fi
 }
 # ==========================
+
+
+
+# SUBLIME ===========
+alias subl='/home/tomek/Sublime\ Text\ 2/sublime_text'
+# ===================
