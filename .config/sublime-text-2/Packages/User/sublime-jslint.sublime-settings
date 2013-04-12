@@ -1,0 +1,11 @@
+{
+
+    // Don't agree with Crockford about whitespace usage
+    //"jslint_options": "--white",
+
+    // run jslint on save.
+    "run_on_save": true,
+
+    // debug flag.
+    "debug": true
+}
