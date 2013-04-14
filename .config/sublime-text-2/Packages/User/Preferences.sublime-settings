@@ -1,5 +1,7 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"auto_complete_delay": 500,
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"detect_indentation": false,
 	"font_face": "Pragmata TT",
 	"hot_exit": false,
 	"ignored_packages":
@@ -7,10 +9,8 @@
 		"Vintage"
 	],
 	"remember_open_files": false,
-    "detect_indentation" : false,
-    "tab_size": 4,
-    "translate_tabs_to_spaces": true,
-    "trim_automatic_white_space": true,
-    "trim_trailing_white_space_on_save": true,
-    "auto_complete_delay": 500
+	"tab_size": 4,
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true
 }
