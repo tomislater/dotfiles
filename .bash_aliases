@@ -47,6 +47,12 @@ alias lsd='ls -Gal | grep ^d'
 function mcd() {
   mkdir -p "$1" && cd "$1";
 }
+
+# safe rm
+alias rm='rm -I'
+
+# find the biggest in a folder
+alias ds='du -ks *|sort -n'
 # ==========================
 
 
@@ -103,4 +109,18 @@ extract () {
 
 # SUBLIME ===========
 alias subl='/home/tomek/Sublime\ Text\ 2/sublime_text'
+# ===================
+
+
+
+# PYTHON SERVER =====
+# serve directory on localhost:80
+servedir(){
+    python -m SimpleHTTPServer 80
+}
+# ===================
+
+# OTHERS ============
+# display weather at szczecin :) (from icm)
+alias szczecin='display http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&row=370&col=142&lang=pl'
 # ===================
