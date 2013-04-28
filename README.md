@@ -18,6 +18,9 @@ Install
 ###### Only sublime
     ./install.sh sublime
 
+###### Only i3
+    ./install.sh i3
+
 ###### Install powerline for vim
     cd ~
     git clone https://github.com/Lokaltog/powerline.git
@@ -26,6 +29,9 @@ Install
 
 ###### If you want use tagbar plugin
     sudo apt-get install ctags
+
+###### If you want use i3
+    sudo apt-get install i3 i3lock i3status i3-wm
 
 Useful things
 -------------
