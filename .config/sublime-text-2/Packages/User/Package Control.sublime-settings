@@ -1,0 +1,19 @@
+{
+	"installed_packages":
+	[
+		"DocBlockr",
+		"GitGutter",
+		"HTML5",
+		"INI",
+		"Mako",
+		"Markdown Preview",
+		"Package Control",
+		"PythonTidy",
+		"SideBarEnhancements",
+		"sublime-jslint",
+		"SublimeBlockCursor",
+		"SublimeLinter",
+		"SublimeRope",
+		"Tag"
+	]
+}
