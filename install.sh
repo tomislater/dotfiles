@@ -21,7 +21,7 @@ function sublimeOnly() {
 }
 
 function i3() {
-	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude "powerline-shell/" --exclude ".fonts/" --exclude ".config/terminator/" --exclude ".config/sublime-text-2/"-av . ~
+	rsync --exclude ".gitmodules" --exclude ".gitconfig" --exclude ".git-completion.bash" --exclude ".git/" --exclude ".bash_aliases" --exclude ".bashrc" --exclude "install.sh" --exclude "README.md" --exclude ".gitconfig" --exclude ".gitignore_global" --exclude "powerline-shell/" --exclude ".fonts/" --exclude ".config/terminator/" --exclude ".config/sublime-text-2/" -av . ~
 }
 
 function doIt() {
