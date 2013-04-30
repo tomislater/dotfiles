@@ -167,7 +167,7 @@ bar {
                 background #002b36
                 statusline #839496
         }
-        status_command i3status --config ~/.i3status.conf
+        status_command i3status
 }
 
 # startup programs
