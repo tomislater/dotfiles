@@ -170,5 +170,9 @@ bar {
         status_command i3status
 }
 
+# nitrogen restore wallpaper
+exec --no-startup-id nitrogen --restore
+
 # startup programs
 exec thunderbird
+
