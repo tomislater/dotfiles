@@ -1,10 +1,12 @@
 {
 	"installed_packages":
 	[
+		"Color Highlighter",
 		"DocBlockr",
 		"GitGutter",
 		"HTML5",
 		"INI",
+		"JsMinifier",
 		"Mako",
 		"Markdown Preview",
 		"Package Control",
