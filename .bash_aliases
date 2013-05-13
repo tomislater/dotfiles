@@ -72,11 +72,6 @@ alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 
 # ==========================
 
 
-# GIT ======================
-alias gitpom='git push origin HEAD:refs/for/master'
-alias gitpod='git push origin HEAD:refs/for/dev'
-# ==========================
-
 # UBUNTU UPGRADE ===========
 alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 # ==========================
