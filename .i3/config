@@ -88,6 +88,12 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
+bindsym XF86Launch5 workspace 1:term
+bindsym XF86Launch6 workspace 2:web
+bindsym XF86Launch7 workspace 3:mail
+bindsym XF86Launch8 workspace 4:docs
+bindsym XF86Launch9 workspace 5:chat
+
 # move focused container to workspace
 bindsym $mod+Shift+exclam move workspace 1:term
 bindsym $mod+Shift+at move workspace 2:web
