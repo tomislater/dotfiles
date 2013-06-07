@@ -28,7 +28,8 @@ class MarkdownPreviewListener(sublime_plugin.EventListener):
     ''' auto update the output html if markdown file has already been converted once '''
 
     def on_post_save(self, view):
-        if view.file_name().endswith(tuple(settings.get('markdown_filetypes', (".md", ".markdown", ".mdown")))):
+        filetypes = tuple(settings.get('markdown_filetypes', (".md", ".markdown", ".mdown")))
+        if filetypes and view.file_name().endswith(filetypes):
             temp_file = getTempMarkdownPreviewPath(view)
             if os.path.isfile(temp_file):
                 # reexec markdown conversion
@@ -82,6 +83,41 @@ class MarkdownPreviewCommand(sublime_plugin.TextCommand):
 
         return styles
 
+    def getMathJax(self):
+        ''' return the MathJax script if enabled '''
+
+        if settings.get('enable_mathjax') is True:
+            mathjax_path = os.path.join(sublime.packages_path(), 'Markdown Preview', "mathjax.html")
+
+            if not os.path.isfile(mathjax_path):
+                sublime.error_message('mathjax.html file not found!')
+                raise Exception("mathjax.html file not found!")
+
+            return open(mathjax_path, 'r').read().decode('utf-8')
+        return ''
+
+    def getHighlight(self):
+        ''' return the Highlight.js and css if enabled '''
+
+        highlight = ''
+        if settings.get('enable_highlight') is True and settings.get('parser') == 'default':
+            highlight_path = os.path.join(sublime.packages_path(), 'Markdown Preview', "highlight.js")
+            highlight_css_path = os.path.join(sublime.packages_path(), 'Markdown Preview', "highlight.css")
+
+            if not os.path.isfile(highlight_path):
+                sublime.error_message('highlight.js file not found!')
+                raise Exception("highligh.js file not found!")
+
+            if not os.path.isfile(highlight_css_path):
+                sublime.error_message('highlight.css file not found!')
+                raise Exception("highlight.css file not found!")
+
+            highlight += u"<style>%s</style>" % open(highlight_css_path, 'r').read().decode('utf-8')
+            highlight += u"<script>%s</script>" % open(highlight_path, 'r').read().decode('utf-8')
+            highlight += "<script>hljs.initHighlightingOnLoad();</script>"
+        return highlight
+
+
     def get_contents(self, region):
         ''' Get contents or selection from view and optionally strip the YAML front matter '''
         contents = self.view.substr(region)
@@ -124,13 +160,19 @@ class MarkdownPreviewCommand(sublime_plugin.TextCommand):
             sublime.status_message('converting markdown with github API...')
             try:
                 github_mode = settings.get('github_mode', 'gfm')
-                data = {"text": markdown, "mode": github_mode}
-                json_data = json.dumps(data)
+                data = {
+                    "text": markdown,
+                    "mode": github_mode
+                }
+                headers = {
+                    'Content-Type': 'application/json'
+                }
+                if github_oauth_token:
+                    headers['Authorization'] = "token %s" % github_oauth_token
+                data = json.dumps(data).encode('utf-8')
                 url = "https://api.github.com/markdown"
                 sublime.status_message(url)
-                request = urllib2.Request(url, json_data, {'Content-Type': 'application/json'})
-                if github_oauth_token:
-                    request.add_header('Authorization', "token %s" % github_oauth_token)
+                request = urllib2.Request(url, data, headers)
                 markdown_html = urllib2.urlopen(request).read().decode('utf-8')
             except urllib2.HTTPError, e:
                 if e.code == 401:
@@ -145,7 +187,10 @@ class MarkdownPreviewCommand(sublime_plugin.TextCommand):
                 sublime.status_message('converted markdown with github API successfully')
         else:
             # convert the markdown
-            markdown_html = markdown2.markdown(markdown, extras=['footnotes', 'toc', 'fenced-code-blocks', 'cuddled-lists'])
+            if settings.get("enable_mathjax") is True or settings.get("enable_highlight") is True:
+                markdown_html = markdown2.markdown(markdown, extras=['footnotes', 'toc', 'fenced-code-blocks', 'cuddled-lists', 'code-friendly'])
+            else:
+                markdown_html = markdown2.markdown(markdown, extras=['footnotes', 'toc', 'fenced-code-blocks', 'cuddled-lists'])
             toc_html = markdown_html.toc_html
             if toc_html:
                 toc_markers = ['[toc]', '[TOC]', '<!--TOC-->']
@@ -167,6 +212,8 @@ class MarkdownPreviewCommand(sublime_plugin.TextCommand):
         full_html = u'<!DOCTYPE html>'
         full_html += '<html><head><meta charset="utf-8">'
         full_html += self.getCSS()
+        full_html += self.getHighlight()
+        full_html += self.getMathJax()
         full_html += '</head><body>'
         full_html += markdown_html
         full_html += '</body>'
@@ -175,6 +222,7 @@ class MarkdownPreviewCommand(sublime_plugin.TextCommand):
         if target in ['disk', 'browser']:
             # check if LiveReload ST2 extension installed and add its script to the resulting HTML
             livereload_installed = ('LiveReload' in os.listdir(sublime.packages_path()))
+            # build the html
             if livereload_installed:
                 full_html += '<script>document.write(\'<script src="http://\' + (location.host || \'localhost\').split(\':\')[0] + \':35729/livereload.js?snipver=1"></\' + \'script>\')</script>'
             # update output html file

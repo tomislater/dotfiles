@@ -1,21 +1,23 @@
 {
-	"auto_complete_delay": 500,
-    "caret_style": "solid",
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"auto_complete_delay": 1000,
+	"caret_style": "solid",
+	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
 	"detect_indentation": false,
+	"folder_exclude_patterns":
+	[
+		"bin",
+		".git"
+	],
 	"font_face": "Pragmata TT",
+    "font_size": 12,
 	"hot_exit": false,
 	"ignored_packages":
-    	[],
-    "folder_exclude_patterns":
-        [
-            "bin",
-            ".git"
-        ],
+	[
+        "Vintage"
+	],
 	"remember_open_files": false,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true,
-    "vintage_start_in_command_mode": true
+	"trim_trailing_white_space_on_save": true
 }
