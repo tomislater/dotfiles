@@ -103,7 +103,7 @@ extract () {
 
 
 # SUBLIME ===========
-alias subl='/home/tomek/Sublime\ Text\ 2/sublime_text'
+alias subl='~/Sublime\ Text\ 2/sublime_text'
 # ===================
 
 
