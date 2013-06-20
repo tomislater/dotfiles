@@ -129,7 +129,7 @@ set laststatus=2
 " cd ~/.vim/bundle/
 " git clone https://github.com/altercation/vim-colors-solarized
 set t_Co=16
-set background=dark
+set background=light
 let g:solarized_termcolors=16
 colorscheme solarized
 
