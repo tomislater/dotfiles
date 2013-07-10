@@ -8,7 +8,7 @@
 		"bin",
 		".git"
 	],
-	"font_face": "Pragmata TT",
+	"font_face": "Inconsolata",
 	"font_size": 12,
 	"hot_exit": false,
 	"ignored_packages":
