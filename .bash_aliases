@@ -109,6 +109,7 @@ alias subl='~/Sublime\ Text\ 2/sublime_text'
 
 
 # OTHERS ============
-# display weather at szczecin :) (from icm)
+# display weather :) (from icm)
 alias szczecin='display "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&row=370&col=142&lang=pl"'
+alias wroclaw='display "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&row=436&col=181&lang=pl"'
 # ===================
