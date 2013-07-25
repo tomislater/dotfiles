@@ -220,3 +220,4 @@ function! DjangoMode()
     autocmd FileType python set ft=python.django
     autocmd FileType html set ft=htmldjango.html
 endfunction
+map <Leader>dm :call DjangoMode()<CR>
