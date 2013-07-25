@@ -186,14 +186,17 @@ set nofoldenable
 " git clone https://github.com/scrooloose/nerdtree.git
 nmap <leader>t :NERDTree<CR>
 
+
 " Close vim if the only window left open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
 
 " Ack for vim
 " sudo apt-get install ack-grep
 " cd ~/.vim/bundle
 " git clone https://github.com/mileszs/ack.vim.git
 nmap <leader>a <Esc>:Ack!
+
 
 " Vim Git Gutter
 " cd ~/.vim/bundle
@@ -203,7 +206,17 @@ nmap <leader>gr :GitGutterToggle<CR>
 nmap <leader>s :GitGutterPrevHunk<CR>
 nmap <leader>d :GitGutterNextHunk<CR>
 
+
 " Tagbar
 " cd ~/.vim/bundle
 " git clone git://github.com/majutsushi/tagbar
 nmap <F8> :TagbarToggle<CR>
+
+
+" ============================================================================
+" My functions
+" ============================================================================
+function! DjangoMode()
+    autocmd FileType python set ft=python.django
+    autocmd FileType html set ft=htmldjango.html
+endfunction
