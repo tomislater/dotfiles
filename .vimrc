@@ -212,6 +212,9 @@ nmap <leader>d :GitGutterNextHunk<CR>
 " git clone git://github.com/majutsushi/tagbar
 nmap <F8> :TagbarToggle<CR>
 
+" Sorted according to their order in the source file
+let g:tagbar_sort = 0
+
 
 " ============================================================================
 " My functions
