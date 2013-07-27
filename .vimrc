@@ -32,7 +32,6 @@ inoremap <C-n> :nohl<CR>
 
 
 " Quicksave command
-" zapisz ;)
 noremap <C-Z> :update<CR>
 vnoremap <C-Z> <C-C>:update<CR>
 inoremap <C-Z> <C-O>:update<CR>
@@ -89,6 +88,8 @@ highlight ColorColumn ctermbg=233
 " Useful settings
 set history=700
 set undolevels=700
+set cursorline
+set scrolloff=7
 
 
 " use spaces
