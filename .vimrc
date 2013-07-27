@@ -224,3 +224,11 @@ function! DjangoMode()
     autocmd FileType html set ft=htmldjango.html
 endfunction
 map <Leader>dm :call DjangoMode()<CR>
+
+
+" ============================================================================
+" Filetype detection
+" ============================================================================
+au BufNewFile,BufRead *.tac setl ft=python " .tac files are used in twisted
+au BufNewFile,BufRead *.json setl ft=javascript
+au BufNewFile,BufRead *.txt setl ft=text
