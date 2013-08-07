@@ -89,7 +89,7 @@ highlight ColorColumn ctermbg=233
 set history=700
 set undolevels=700
 set cursorline
-set scrolloff=7
+set scrolloff=3
 
 
 " use spaces
