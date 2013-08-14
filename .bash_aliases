@@ -55,6 +55,16 @@ alias rm='rm -I'
 alias ds='du -ks *|sort -n'
 # ==========================
 
+# make diff into ~/diffs/
+dodiff() {
+    if [ ! -d ~/diffs ]; then
+        mkdir -p ~/diffs
+    fi
+
+    branch=`git rev-parse --abbrev-ref HEAD`
+    git diff $1 > ~/diffs/$branch-$1.diff
+}
+
 
 # TERMINAL =================
 alias c='clear'
