@@ -129,3 +129,4 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # for tmux
 export TERM="xterm-256color"
+export EDITOR="vim"
