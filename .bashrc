@@ -126,3 +126,6 @@ export PROMPT_COMMAND="_update_ps1"
 # virtualenv
 export WORKON_HOME=~/.virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
+
+# for tmux
+export TERM="xterm-256color"
