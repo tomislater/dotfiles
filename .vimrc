@@ -187,6 +187,9 @@ set nofoldenable
 " git clone https://github.com/scrooloose/nerdtree.git
 nmap <leader>t :NERDTree<CR>
 
+" Display hidden files
+let NERDTreeShowHidden=1
+
 
 " Close vim if the only window left open is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
