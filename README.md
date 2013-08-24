@@ -60,7 +60,6 @@ Useful things
     https://github.com/airblade/vim-gitgutter.git
     https://github.com/garbas/vim-snipmate.git
     https://github.com/honza/vim-snippets.git
-    https://github.com/mattn/zencoding-vim
 
 ###### Powerline-shell
     https://github.com/milkbikis/powerline-shell.git
