@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vimwiki"]
 	path = .vim/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule ".vim/bundle/vim-move"]
+	path = .vim/bundle/vim-move
+	url = https://github.com/matze/vim-move.git
