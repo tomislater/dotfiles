@@ -9,7 +9,6 @@
     use_system_font = False
     background_darkness = 0.87
     scrollback_lines = 2048
-    background_type = transparent
     cursor_color = "#839496"
     foreground_color = "#839496"
     show_titlebar = False
