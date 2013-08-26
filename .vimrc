@@ -229,7 +229,7 @@ let g:tagbar_sort = 0
 " Vim Move
 " cd ~/.vim/bundle
 " git clone https://github.com/matze/vim-move.git
-let g:move_key_modifier = 'C'
+" let g:move_key_modifier = 'C'
 
 
 " ============================================================================
