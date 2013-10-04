@@ -180,5 +180,5 @@ bar {
 exec --no-startup-id nitrogen --restore
 
 # startup programs
-exec thunderbird
+#exec thunderbird
 
