@@ -160,6 +160,7 @@ bindsym XF86AudioRaiseVolume exec amixer -c 0 set Master 2dB+
 
 # Putting clients on specific workspaces
 assign [class="Firefox"] 2:web
+assign [class="Chromium"] 2:web
 assign [class="Thunderbird"] 3:mail
 assign [class="Xchat"] 5:chat
 assign [class="Anki"] 7:anki
@@ -180,5 +181,4 @@ bar {
 exec --no-startup-id nitrogen --restore
 
 # startup programs
-#exec thunderbird
-
+# exec thunderbird
