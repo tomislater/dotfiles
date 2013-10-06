@@ -82,7 +82,7 @@ bindsym $mod+2 workspace 2:web
 bindsym $mod+3 workspace 3:mail
 bindsym $mod+4 workspace 4:docs
 bindsym $mod+5 workspace 5:chat
-bindsym $mod+6 workspace 6:dbg
+bindsym $mod+6 workspace 6:spotify
 bindsym $mod+7 workspace 7:anki
 bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
@@ -100,7 +100,7 @@ bindsym $mod+Shift+at move workspace 2:web
 bindsym $mod+Shift+numbersign move workspace 3:mail
 bindsym $mod+Shift+dollar move workspace 4:docs
 bindsym $mod+Shift+percent move workspace 5:chat
-bindsym $mod+Shift+asciicircum move workspace 6:dbg
+bindsym $mod+Shift+asciicircum move workspace 6:spotify
 bindsym $mod+Shift+ampersand move workspace 7:anki
 bindsym $mod+Shift+asterisk move workspace 8
 bindsym $mod+Shift+parenleft move workspace 9
@@ -162,6 +162,7 @@ bindsym XF86AudioRaiseVolume exec amixer -c 0 set Master 2dB+
 assign [class="Firefox"] 2:web
 assign [class="Chromium"] 2:web
 assign [class="Thunderbird"] 3:mail
+assign [class="Spotify"] 6:spotify
 assign [class="Xchat"] 5:chat
 assign [class="Anki"] 7:anki
 
