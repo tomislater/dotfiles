@@ -5,12 +5,6 @@ Install
 -------
     ./install.sh # (-f, --force)
 
-###### Install powerline for vim
-    cd ~
-    git clone https://github.com/Lokaltog/powerline.git
-    cd powerline
-    sudo python setup.py install
-
 ###### If you want use tagbar plugin
     sudo apt-get install ctags
 
