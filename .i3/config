@@ -178,6 +178,9 @@ bar {
         status_command i3status
 }
 
+# Off my laptop screen
+exec --no-startup-id xrandr --output LVDS1 --off
+
 # nitrogen restore wallpaper
 exec --no-startup-id nitrogen --restore
 
