@@ -49,3 +49,7 @@ export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/s
 
 export WORKON_HOME=~/.virtualenv
 source /usr/local/bin/virtualenvwrapper.sh
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
