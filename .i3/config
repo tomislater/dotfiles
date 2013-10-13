@@ -185,4 +185,4 @@ exec --no-startup-id xrandr --output LVDS1 --off
 exec --no-startup-id nitrogen --restore
 
 # startup programs
-# exec thunderbird
+exec --no-startup-id nm-applet
