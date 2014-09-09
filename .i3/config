@@ -78,33 +78,32 @@ bindsym $mod+a focus parent
 
 # switch to workspace
 bindsym $mod+1 workspace 1:term
-bindsym $mod+2 workspace 2:web
-bindsym $mod+3 workspace 3:mail
+bindsym $mod+2 workspace 2:dev
+bindsym $mod+3 workspace 3:web
 bindsym $mod+4 workspace 4:docs
-bindsym $mod+5 workspace 5:chat
-bindsym $mod+6 workspace 6:spotify
-bindsym $mod+7 workspace 7:anki
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+9 workspace 9:chat
+bindsym $mod+0 workspace 10:spotify
 
 bindsym XF86Launch5 workspace 1:term
-bindsym XF86Launch6 workspace 2:web
-bindsym XF86Launch7 workspace 3:mail
+bindsym XF86Launch6 workspace 2:dev
+bindsym XF86Launch7 workspace 3:web
 bindsym XF86Launch8 workspace 4:docs
-bindsym XF86Launch9 workspace 5:chat
 
 # move focused container to workspace
 bindsym $mod+Shift+exclam move workspace 1:term
-bindsym $mod+Shift+at move workspace 2:web
-bindsym $mod+Shift+numbersign move workspace 3:mail
+bindsym $mod+Shift+at move workspace 2:dev
+bindsym $mod+Shift+numbersign move workspace 3:web
 bindsym $mod+Shift+dollar move workspace 4:docs
-bindsym $mod+Shift+percent move workspace 5:chat
-bindsym $mod+Shift+asciicircum move workspace 6:spotify
-bindsym $mod+Shift+ampersand move workspace 7:anki
+bindsym $mod+Shift+percent move workspace 5
+bindsym $mod+Shift+asciicircum move workspace 6
+bindsym $mod+Shift+ampersand move workspace 7
 bindsym $mod+Shift+asterisk move workspace 8
-bindsym $mod+Shift+parenleft move workspace 9
-bindsym $mod+Shift+parenright move workspace 10
+bindsym $mod+Shift+parenleft move workspace 9:chat
+bindsym $mod+Shift+parenright move workspace 10:spotify
 
 # reload the configuration file
 bindsym $mod+Shift+C reload
@@ -159,12 +158,12 @@ bindsym XF86AudioLowerVolume exec amixer -c 0 set Master 2dB-
 bindsym XF86AudioRaiseVolume exec amixer -c 0 set Master 2dB+
 
 # Putting clients on specific workspaces
-assign [class="Firefox"] 2:web
-assign [class="Chromium"] 2:web
-assign [class="Thunderbird"] 3:mail
-assign [class="Spotify"] 6:spotify
-assign [class="Xchat"] 5:chat
-assign [class="Anki"] 7:anki
+assign [class="jetbrains-pycharm"] 2:dev
+for_window [class="jetbrains-pycharm"] 2:dev
+assign [class="Firefox"] 3:web
+assign [class="Chromium"] 3:web
+assign [class="Xchat"] 9:chat
+assign [class="Spotify"] 10:spotify
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
