@@ -187,4 +187,7 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id nm-applet
 
 # use f.lux!
-exec --no-startup-id xflux -l 51.11 -g 17.03
+#exec --no-startup-id xflux -l 51.11 -g 17.03
+
+# use redshift
+exec --no-startup-id redshift -m randr -l manual 51.11:17.03
