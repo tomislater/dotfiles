@@ -192,5 +192,5 @@ exec --no-startup-id nm-applet
 # use redshift
 exec --no-startup-id redshift -m randr -l manual 51.11:17.03
 
-# suspend monitor after 5 hours
-exec --no-startup-id xset dpms 18000
+# Energy Star features off
+exec --no-startup-id xset -dpms
