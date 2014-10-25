@@ -192,5 +192,6 @@ exec --no-startup-id nm-applet
 # use redshift
 exec --no-startup-id redshift -m randr -l manual 51.11:17.03
 
-# Energy Star features off
+# Energy Star features off, ss off
 exec --no-startup-id xset -dpms
+exec --no-startup-id xset s off
