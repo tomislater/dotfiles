@@ -116,3 +116,8 @@ extract () {
 alias szczecin='display "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&row=370&col=142&lang=pl"'
 alias wroclaw='display "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&row=436&col=181&lang=pl"'
 # ===================
+
+
+# i3 ======
+alias givemehd='xrandr --output LVDS1 --off;xrandr --output HDMI1 --mode 1920x1080'
+# =========
