@@ -178,7 +178,7 @@ bar {
 }
 
 # Off my laptop screen
-exec --no-startup-id xrandr --output LVDS1 --off
+#exec --no-startup-id xrandr --output LVDS1 --off
 
 # nitrogen restore wallpaper
 exec --no-startup-id nitrogen --restore
@@ -190,7 +190,7 @@ exec --no-startup-id nm-applet
 #exec --no-startup-id xflux -l 51.11 -g 17.03
 
 # use redshift
-exec --no-startup-id redshift -m randr -l manual 51.11:17.03
+#exec --no-startup-id redshift -m randr -l manual 51.11:17.03
 
 # Energy Star features off, ss off
 exec --no-startup-id xset -dpms
