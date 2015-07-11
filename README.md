@@ -3,7 +3,6 @@ dotfiles
 
 Install
 -------
-    ./install.sh # (-f, --force)
     ./install.sh # (--mac)
 
 ###### If you want use tagbar plugin
