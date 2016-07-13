@@ -53,3 +53,8 @@ export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/s
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
