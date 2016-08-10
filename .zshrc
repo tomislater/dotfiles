@@ -54,6 +54,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# I have other macros at work
+if [ -f ~/.custom_aliases ]; then
+    . ~/.custom_aliases
+fi
+
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
