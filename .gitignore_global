@@ -6,3 +6,4 @@
 .codeintel/
 .idea/
 *.log
+.DS_Store
