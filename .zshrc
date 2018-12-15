@@ -63,3 +63,9 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# added by Miniconda3 installer
+export PATH="$HOME/miniconda3/bin:$PATH"
+
+# terraform and other things
+export PATH=$PATH:$HOME
