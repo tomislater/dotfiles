@@ -69,3 +69,6 @@ export PATH="$HOME/miniconda3/bin:$PATH"
 
 # terraform and other things
 export PATH=$PATH:$HOME
+
+# krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
