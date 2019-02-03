@@ -1,8 +1,6 @@
 # MY ALIASES
 
 # INFO =====================
-alias cpu='cat /proc/cpuinfo'
-alias mem='cat /proc/meminfo'
 alias wotgobblemem='ps -o time,ppid,pid,nice,pcpu,pmem,user,comm -A | sort -n -k 6 | tail -15'
 # ==========================
 
@@ -81,12 +79,6 @@ fname() {
 alias freq='cut -f1 -d" " ~/.bash_history | sort | uniq -c | sort -nr | head -n 30'
 # ==========================
 
-
-# UBUNTU UPGRADE ===========
-alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
-# ==========================
-
-
 # USEFUL ALIAS FOR EXTRACT KNOW ARCHIVES
 extract () {
     if [ -f $1 ] ; then
@@ -109,15 +101,3 @@ extract () {
      fi
 }
 # ==========================
-
-
-# OTHERS ============
-# display weather :) (from icm)
-alias szczecin='display "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&row=370&col=142&lang=pl"'
-alias wroclaw='display "http://www.meteo.pl/um/metco/mgram_pict.php?ntype=0u&row=436&col=181&lang=pl"'
-# ===================
-
-
-# i3 ======
-alias givemehd='xrandr --output LVDS1 --off;xrandr --output HDMI1 --mode 1920x1080'
-# =========
