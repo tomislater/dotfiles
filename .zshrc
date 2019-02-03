@@ -7,6 +7,10 @@ ZSH=$HOME/oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="spaceship"
 
+SPACESHIP_HG_SHOW="false"
+SPACESHIP_HG_BRANCH_SHOW="false"
+SPACESHIP_HG_STATUS_SHOW="false"
+
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
