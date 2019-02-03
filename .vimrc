@@ -222,26 +222,10 @@ nmap <F8> :TagbarToggle<CR>
 let g:tagbar_sort = 0
 
 
-" Vim viwki
-" cd ~/.vim/bundle
-" git clone https://github.com/vimwiki/vimwiki.gi://github.com/vimwiki/vimwiki.git
-" command: VimwikiAll2HTML
-
-
 " Vim Move
 " cd ~/.vim/bundle
 " git clone https://github.com/matze/vim-move.git
 " let g:move_key_modifier = 'C'
-
-
-" ============================================================================
-" My functions
-" ============================================================================
-function! DjangoMode()
-    autocmd FileType python set ft=python.django
-    autocmd FileType html set ft=htmldjango.html
-endfunction
-map <Leader>dm :call DjangoMode()<CR>
 
 
 " ============================================================================

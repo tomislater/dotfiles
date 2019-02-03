@@ -16,9 +16,6 @@
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule ".vim/bundle/vim-snipmate"]
-	path = .vim/bundle/vim-snipmate
-	url = git://github.com/garbas/vim-snipmate.git
 [submodule ".vim/bundle/tlib_vim"]
 	path = .vim/bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
@@ -31,21 +28,12 @@
 [submodule ".vim/bundle/tagbar"]
 	path = .vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
-[submodule ".vim/bundle/vim-snippets"]
-	path = .vim/bundle/vim-snippets
-	url = https://github.com/honza/vim-snippets.git
 [submodule ".vim/bundle/powerline"]
 	path = .vim/bundle/powerline
 	url = https://github.com/Lokaltog/powerline.git
-[submodule ".vim/bundle/vimwiki"]
-	path = .vim/bundle/vimwiki
-	url = https://github.com/vimwiki/vimwiki.git
 [submodule ".vim/bundle/vim-move"]
 	path = .vim/bundle/vim-move
 	url = https://github.com/matze/vim-move.git
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = http://github.com/robbyrussell/oh-my-zsh.git
-[submodule ".vim/bundle/rust.vim"]
-	path = .vim/bundle/rust.vim
-	url = https://github.com/rust-lang/rust.vim.git
