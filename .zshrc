@@ -80,3 +80,5 @@ export PATH=$PATH:$HOME
 
 # krew
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+PATH="/usr/local/opt/helm@2/bin:$PATH"
