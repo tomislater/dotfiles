@@ -47,7 +47,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras ssh-agent virtualenv pip python docker pyenv helm iterm2 kubectl vscode)
+plugins=(git git-extras ssh-agent virtualenv pip python docker helm iterm2 kubectl vscode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,9 +66,6 @@ fi
 if [ -f ~/.custom_aliases ]; then
     . ~/.custom_aliases
 fi
-
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
