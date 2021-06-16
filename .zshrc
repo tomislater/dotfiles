@@ -66,3 +66,5 @@ fi
 if [ -f ~/.custom_aliases ]; then
     . ~/.custom_aliases
 fi
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
